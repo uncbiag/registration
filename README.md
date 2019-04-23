@@ -16,4 +16,4 @@ The purpose of this repository is to provide an overview of github repositories 
 
 Mermaid is a registration toolkit making use of automatic differentiation for rapid prototyping. It includes various image registration models. In particular, stationary velocity field models (both based on velocity fields and momentum fields) as well as scalar and vector momentum Large Displacement Diffeomorphic Metric Mapping (LDDMM) models.
 
-*This repository will be made available shortly. Stay tuned.*
+*This repository will be made available shortly. Our goal is some time in May. Stay tuned.*
