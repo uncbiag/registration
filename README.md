@@ -16,4 +16,10 @@ The purpose of this repository is to provide an overview of github repositories 
 
 Mermaid is a registration toolkit making use of automatic differentiation for rapid prototyping. It includes various image registration models. In particular, stationary velocity field models (both based on velocity fields and momentum fields) as well as scalar and vector momentum Large Displacement Diffeomorphic Metric Mapping (LDDMM) models.
 
-*This repository will be made available shortly. Our goal is some time in June or July (sorry, not May as initially anticipated, but we are working on it). Stay tuned.*
+The mermaid repository can be found here:
+https://github.com/uncbiag/mermaid
+
+# easyreg
+
+There is also an extension that builds on mermaid, easyreg, which can be found here:
+https://github.com/uncbiag/easyreg
