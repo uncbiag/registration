@@ -72,13 +72,13 @@ Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019
 <hr>
 
 Networks for Joint Affine and Non-parametric Image Registration [[link]](https://arxiv.org/pdf/1903.08811.pdf)\
-Zhengyang Shen, François-Xavier Vialard, Marc Niethammer. NeurIPS 2019.
+Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
 
 <img src="images/rdmm.png" alt="rdmm" width="300"/><br>
 <hr>
 
 Region-specific Diffeomorphic Metric Mapping [[link]](https://arxiv.org/pdf/1906.00139.pdf)\
-Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
+Zhengyang Shen, François-Xavier Vialard, Marc Niethammer. NeurIPS 2019.
 
 <img src="images/avsm.png" alt="rdmm" width=300><br>
 <hr>
