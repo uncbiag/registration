@@ -71,10 +71,11 @@ Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019
 <img src="images/metric_learning.png" alt="metric_learning" width="300"/><br>
 <hr>
 
+
 Networks for Joint Affine and Non-parametric Image Registration [[link]](https://arxiv.org/pdf/1903.08811.pdf)\
 Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
 
-<img src="images/rdmm.png" alt="rdmm" width="300"/><br>
+<img src="images/rdmm.png" alt="avsm" width="300"/><br>
 <hr>
 
 Region-specific Diffeomorphic Metric Mapping [[link]](https://arxiv.org/pdf/1906.00139.pdf)\
