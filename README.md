@@ -2,6 +2,9 @@
 
 The purpose of this repository is to provide an overview of github repositories on non-parametric image registration.
 
+<hr>
+
+
 # Mermaid: iMagE Registration via autoMAtIc Differentiation
 
 <pre>
@@ -38,7 +41,7 @@ https://github.com/uncbiag/mermaid
 * LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
 * LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
 * LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
-* LDDMMVectorAdaptiveSmootherMomentumMapNet: map-based LDDMM using the vector-momentum parameterization and advected regularizer
+* LDDMMVectorAdaptiveSmootherMomentumMapNet: map-based LDDMM using the vector-momentum parameterization and advected spatial-temporal regularizer (RDMM)
 
 
 **Solver support list**:
@@ -49,6 +52,8 @@ https://github.com/uncbiag/mermaid
 **Optimizer**:
 * support single/multi-scale optimizer
 * support SGD, l-BFGS and some limited support for adam
+
+<hr>
 
 
 # EasyReg
@@ -61,22 +66,22 @@ We also added some supports on [ANTsPy](https://github.com/ANTsX/ANTsPy), [Nifty
 The EasyReg repository can be found here:
 https://github.com/uncbiag/easyreg
 
+<hr>
 
 
 # Related work
 
 Metric Learning for Image Registration [[link]](https://arxiv.org/pdf/1904.09524.pdf)\
-Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019
+Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019.
 
 <img src="images/metric_learning.png" alt="metric_learning" width="300"/><br>
-<hr>
 
 
 Networks for Joint Affine and Non-parametric Image Registration [[link]](https://arxiv.org/pdf/1903.08811.pdf)\
 Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
 
 <img src="images/avsm.png" alt="avsm" width="300"/><br>
-<hr>
+
 
 Region-specific Diffeomorphic Metric Mapping [[link]](https://arxiv.org/pdf/1906.00139.pdf)\
 Zhengyang Shen, François-Xavier Vialard, Marc Niethammer. NeurIPS 2019.
