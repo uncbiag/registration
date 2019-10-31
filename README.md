@@ -101,7 +101,7 @@ Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019.
 <img src="images/metric_learning.png" alt="metric_learning" width="300"/><br>
 
 
-<a id="shen19a">[Shen19a]</a> Networks for Joint Affine and Non-parametric Image Registration [[pdf]](https://arxiv.org/pdf/1903.08811.pdf) [[code]]()\
+<a id="shen19a">[Shen19a]</a> Networks for Joint Affine and Non-parametric Image Registration [[pdf]](https://arxiv.org/pdf/1903.08811.pdf) [[code]](https://github.com/uncbiag/easyreg)\
 Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
 
 <img src="images/avsm.png" alt="avsm" width="300"/><br>
