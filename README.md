@@ -77,13 +77,13 @@ https://github.com/uncbiag/easyreg
 
 # Related work
 
-The first work on deep-learning for non-parametric medical image registration [Yang16] predicted the initial momentum of an LDDMM solution, hence was already able to guarantee diffeomorphic transformations. Because it is based on patch-wise predictions, it can be applied to very large images if needed. This work was extended and extensively analyzed in [Yang17], showing competitive performance with state-of-the-art optimization-based deformable image registration approaches; it also included deep-network models to predict displacement and velocity fields. Follow-up work focused on learning the registration metric [Niethammer19]; jointly learning to predict affine transformations and a nonparametric transformation [Shen19a] (including multi-step approaches and training to encourage symmetric models); as well as extensions of the LDDMM approach to spatio-temporal regularizers (i.e., that move with the deforming images) also within a deep-network approach [Shen19b]. 
+The first work on deep-learning for non-parametric medical image registration [Yang16](#yang16) predicted the initial momentum of an LDDMM solution, hence was already able to guarantee diffeomorphic transformations. Because it is based on patch-wise predictions, it can be applied to very large images if needed. This work was extended and extensively analyzed in [Yang17], showing competitive performance with state-of-the-art optimization-based deformable image registration approaches; it also included deep-network models to predict displacement and velocity fields. Follow-up work focused on learning the registration metric [Niethammer19]; jointly learning to predict affine transformations and a nonparametric transformation [Shen19a] (including multi-step approaches and training to encourage symmetric models); as well as extensions of the LDDMM approach to spatio-temporal regularizers (i.e., that move with the deforming images) also within a deep-network approach [Shen19b]. 
 
 Bibtex entries for this related work can be found here [[bibtex]](citations.bib) and the citations are listed in the next section.
 
 # Bibliography
 
-[Yang16] Fast Predictive Image Registration [[pdf]](https://arxiv.org/pdf/1607.02504.pdf) [[code]](https://github.com/rkwitt/FastPredictiveImageRegistration)\
+<a id="yang16">[[Yang16]]</a> Fast Predictive Image Registration [[pdf]](https://arxiv.org/pdf/1607.02504.pdf) [[code]](https://github.com/rkwitt/FastPredictiveImageRegistration)\
 Xiao Yang, Roland Kwitt, Marc Niethammer. DLMIA 2016.
 
 <img src="images/dlmia_network.png" alt="fast_predictive" width="300"/><br>
