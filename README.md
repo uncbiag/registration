@@ -77,37 +77,37 @@ https://github.com/uncbiag/easyreg
 
 # Related work
 
-The first work on deep-learning for non-parametric medical image registration [Yang16](#yang16) predicted the initial momentum of an LDDMM solution, hence was already able to guarantee diffeomorphic transformations. Because it is based on patch-wise predictions, it can be applied to very large images if needed. This work was extended and extensively analyzed in [Yang17], showing competitive performance with state-of-the-art optimization-based deformable image registration approaches; it also included deep-network models to predict displacement and velocity fields. Follow-up work focused on learning the registration metric [Niethammer19]; jointly learning to predict affine transformations and a nonparametric transformation [Shen19a] (including multi-step approaches and training to encourage symmetric models); as well as extensions of the LDDMM approach to spatio-temporal regularizers (i.e., that move with the deforming images) also within a deep-network approach [Shen19b]. 
+The first work on deep-learning for non-parametric medical image registration [[Yang16]](#yang16) predicted the initial momentum of an LDDMM solution, hence was already able to guarantee diffeomorphic transformations. Because it is based on patch-wise predictions, it can be applied to very large images if needed. This work was extended and extensively analyzed in [[Yang17]](#yang17), showing competitive performance with state-of-the-art optimization-based deformable image registration approaches; it also included deep-network models to predict displacement and velocity fields. Follow-up work focused on learning the registration metric [[Niethammer19]](#niethammer19); jointly learning to predict affine transformations and a nonparametric transformation [[Shen19a]](#shen19a) (including multi-step approaches and training to encourage symmetric models); as well as extensions of the LDDMM approach to spatio-temporal regularizers (i.e., that move with the deforming images) also within a deep-network approach [[Shen19b]](#shen19b). 
 
 Bibtex entries for this related work can be found here [[bibtex]](citations.bib) and the citations are listed in the next section.
 
 # Bibliography
 
-<a id="yang16">[[Yang16]]</a> Fast Predictive Image Registration [[pdf]](https://arxiv.org/pdf/1607.02504.pdf) [[code]](https://github.com/rkwitt/FastPredictiveImageRegistration)\
+<a id="yang16">[Yang16]</a> Fast Predictive Image Registration [[pdf]](https://arxiv.org/pdf/1607.02504.pdf) [[code]](https://github.com/rkwitt/FastPredictiveImageRegistration)\
 Xiao Yang, Roland Kwitt, Marc Niethammer. DLMIA 2016.
 
 <img src="images/dlmia_network.png" alt="fast_predictive" width="300"/><br>
 
 
-[Yang17] Quicksilver: Fast predictive image registration--a deep learning approach [[pdf]](https://arxiv.org/pdf/1703.10908.pdf) [[code]](https://github.com/rkwitt/quicksilver)\
+<a id="yang17">[Yang17]</a> Quicksilver: Fast predictive image registration--a deep learning approach [[pdf]](https://arxiv.org/pdf/1703.10908.pdf) [[code]](https://github.com/rkwitt/quicksilver)\
 Xiao Yang, Roland Kwitt, Martin Styner, Marc Niethammer, NeuroImage 2017.
 
 <img src="images/neuroimage_quicksilver.png" alt="neuroimage_quicksilver" width="300"/><br>
 
 
-[Niethammer19] Metric Learning for Image Registration [[pdf]](https://arxiv.org/pdf/1904.09524.pdf) [[code]](https://github.com/uncbiag/mermaid)\
+<a id="niethammer19">[Niethammer19]</a> Metric Learning for Image Registration [[pdf]](https://arxiv.org/pdf/1904.09524.pdf) [[code]](https://github.com/uncbiag/mermaid)\
 Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019.
 
 <img src="images/metric_learning.png" alt="metric_learning" width="300"/><br>
 
 
-[Shen19a] Networks for Joint Affine and Non-parametric Image Registration [[pdf]](https://arxiv.org/pdf/1903.08811.pdf) [[code]]()\
+<a id="shen19a">[Shen19a]</a> Networks for Joint Affine and Non-parametric Image Registration [[pdf]](https://arxiv.org/pdf/1903.08811.pdf) [[code]]()\
 Zhengyang Shen, Xu Han, Zhenlin Xu, Marc Niethammer. CVPR 2019.
 
 <img src="images/avsm.png" alt="avsm" width="300"/><br>
 
 
-[Shen19b] Region-specific Diffeomorphic Metric Mapping [[pdf]](https://arxiv.org/pdf/1906.00139.pdf) [[code]](https://github.com/uncbiag/easyreg)\
+<a id="shen19b">[Shen19b]</a> Region-specific Diffeomorphic Metric Mapping [[pdf]](https://arxiv.org/pdf/1906.00139.pdf) [[code]](https://github.com/uncbiag/easyreg)\
 Zhengyang Shen, François-Xavier Vialard, Marc Niethammer. NeurIPS 2019.
 
 <img src="images/rdmm.png" alt="rdmm" width=400><br>
