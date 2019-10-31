@@ -26,28 +26,34 @@ It includes various image registration models. In particular, stationary velocit
 The Mermaid repository can be found here:
 https://github.com/uncbiag/mermaid
 
-**Method support list**:
-* SVFImageNet: image-based stationary velocity field
-* SVFMapNet: map-based stationary velocity field
-* SVFQuasiMomentumImageNet: EXPERIMENTAL (not working yet): SVF which is parameterized by a momentum
-* SVFScalarMomentumImageNet: image-based SVF using the scalar-momentum parameterization
-* SVFScalarMomentumMapNet: map-based SVF using the scalar-momentum parameterization
-* SVFVectorMomentumImageNet: image-based SVF using the vector-momentum parameterization
-* SVFVectorMomentumMapNet: map-based SVF using the vector-momentum parameterization
-* CVFVectorMomentumMapNet: map-based CVF using the vector-momentum parameterization
-* LDDMMShootingVectorMomentumImageNet: image-based LDDMM using the vector-momentum parameterization
-* LDDMMShootingVectorMomentumMapNet: map-based LDDMM using the vector-momentum parameterization
-* LDDMMShootingScalarMomentumImageNet: image-based LDDMM using the scalar-momentum parameterization
-* LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
-* LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
-* LDDMMShootingScalarMomentumMapNet: map-based LDDMM using the scalar-momentum parameterization
-* LDDMMVectorAdaptiveSmootherMomentumMapNet: map-based LDDMM using the vector-momentum parameterization and advected spatial-temporal regularizer (RDMM)
+**Supported transformation models**:
+* affine_map: map-based affine registration
+* diffusion_map: displacement-based diffusion registration
+* curvature_map: displacement-based curvature registration
+* total_variation_map: displacement-based total variation registration
+* svf_map: map-based stationary velocity field
+* svf_image: image-based stationary velocity field
+* svf_scalar_momentum_image: image-based stationary velocity field using the scalar momentum
+* svf_scalar_momentum_map: map-based stationary velocity field using the scalar momentum
+* svf_vector_momentum_image: image-based stationary velocity field using the vector momentum
+* svf_vector_momentum_map: map-based stationary velocity field using the vector momentum
+* lddmm_shooting_map: map-based shooting-based LDDMM using the vector momentum
+* lddmm_shooting_image: image-based shooting-based LDDMM using the vector momentum
+* lddmm_shooting_scalar_momentum_map: map-based shooting-based LDDMM using the scalar momentum
+* lddmm_shooting_scalar_momentum_image: image-based shooting-based LDDMM using the scalar momentum
+* lddmm_adapt_smoother_map: map-based shooting-based Region specific diffemorphic mapping, with a spatio-temporal regularizer
+* svf_adapt_smoother_map: map-based shooting-based vSVF, with a spatio regularizer
 
+**Supported similarity measures**:
+* ssd: sum of squared differences
+* ncc: normalize cross correlation
+* ncc_positive: positive normalized cross-correlation
+* ncc_negative: negative normalized cross-correlation
+* lncc: localized normalized cross correlation (multi-scale)
 
-**Solver support list**:
+**Supported solvers**:
 * embedded RK4
 * torchdiffeq: explicit_adams, fixed_adams, tsit5, dopri5, euler, midpoint, rk4
-
 
 **Optimizer**:
 * support single/multi-scale optimizer
