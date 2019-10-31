@@ -77,6 +77,18 @@ https://github.com/uncbiag/easyreg
 
 # Related work
 
+Fast Predictive Image Registration [[link]](https://arxiv.org/pdf/1607.02504.pdf)\
+Xiao Yang, Roland Kwitt, Marc Niethammer. DLMIA 2016.
+
+<img src="images/dlmia_network.png" alt="fast_predictive" width="300"/><br>
+
+
+Quicksilver: Fast predictive image registration--a deep learning approach [[link]](https://arxiv.org/pdf/1703.10908.pdf)\
+Xiao Yang, Roland Kwitt, Martin Styner, Marc Niethammer, NeuroImage 2017.
+
+<img src="images/neuroimage_quicksilver.png" alt="neuroimage_quicksilver" width="300"/><br>
+
+
 Metric Learning for Image Registration [[link]](https://arxiv.org/pdf/1904.09524.pdf)\
 Marc Niethammer, Roland Kwitt, Francois-Xavier Vialard. CVPR 2019.
 
