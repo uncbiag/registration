@@ -2,7 +2,7 @@
 
 The purpose of this repository is to provide an overview of github repositories on non-parametric image registration.
 
-All our code is written in [pyTorch](https://pytorch.org/) except for our original deep-learning registration work [[Yang16]](#yang16) which is written in [torch](http://torch.ch/). 
+All our code is written in python using [PyTorch](https://pytorch.org/) except for our original deep-learning registration work [[Yang16]](#yang16) which is written in lua using [torch](http://torch.ch/). 
 
 <hr>
 
