@@ -10,23 +10,23 @@ Here are some examples:
 
 Vector Momentum-parameterized Stationary Velocity Field(vSVF): with a temporal-invariant velocity field and a constant regularizer.
 
-<img src="images/vsvf.gif" alt="vsvf" width="400"/><br>
+<img src="images/vsvf.gif" alt="vsvf" width="700"/><br>
 
 
 Large Displacement Diffeo-morphic Metric Mapping (LDDMM): with a spatial-temporal velocity field and a constant regularizer.
 
-<img src="images/lddmm.gif" alt="lddmm" width="400"/><br>
+<img src="images/lddmm.gif" alt="lddmm" width="700"/><br>
 
 
 Region-specific Diffeomorphic Metric Mapping (RDMM): with a spatial-temporal velocity field and a spatial-temporal regularizer.
 
 RDMM with an optimized regularizer
 
-<img src="images/rdmm.gif" alt="rdmm" width="400"/><br>
+<img src="images/rdmm.gif" alt="rdmm" width="700"/><br>
 
 RDMM with a pre-defined regularizer
 
-<img src="images/rdmm_predefined.gif" alt="rdmm_predefined" width="400"/><br>
+<img src="images/rdmm_predefined.gif" alt="rdmm_predefined" width="700"/><br>
 
 
 # Mermaid: iMagE Registration via autoMAtIc Differentiation
