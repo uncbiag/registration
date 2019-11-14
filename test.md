@@ -25,7 +25,7 @@ moving image) and the target image (or fixed image).*
 
 Smile.gif
 
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.svg?invert_in_darkmode" align=middle width=127.984725pt height=39.45249pt/></p>
+<p align="center"><img alt="$$&#10;\frac{n!}{k!(n-k)!} = {n \choose k}&#10;$$" src="svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.png" align="middle" width="127.984725pt" height="39.45249pt"/></p>
 
 A desired transformation can be evaluated by “similarity” and
 “smoothness” that we often refer to “regularization”.
@@ -43,8 +43,8 @@ there is a continuous time axis, so the flow is dynamic).
 Before step further, let’s would introduce some notations to help
 formulate the fluid registration problem. Let’s denote source image as
 *I*<sub>0</sub>, target image as*I*<sub>1</sub>. The image coordinate as
-<img src="https://rawgit.com/uncbiag/registration/introduction/svgs/ed9e08fd7e32b4d6f20b0ee8a73b795f.svg?invert_in_darkmode" align=middle width=32.876745pt height=45.84458999999998pt/> (typically a 2d or 3d vector). To simplify notation, we will
-not bold <img src="https://rawgit.com/uncbiag/registration/introduction/svgs/ed9e08fd7e32b4d6f20b0ee8a73b795f.svg?invert_in_darkmode" align=middle width=32.876745pt height=45.84458999999998pt/> in the rest of the article.
+<img alt="$\\bf x$" src="svgs/ed9e08fd7e32b4d6f20b0ee8a73b795f.png" align="middle" width="32.876745pt" height="45.84458999999998pt"/> (typically a 2d or 3d vector). To simplify notation, we will
+not bold <img alt="$\\bf x$" src="svgs/ed9e08fd7e32b4d6f20b0ee8a73b795f.png" align="middle" width="32.876745pt" height="45.84458999999998pt"/> in the rest of the article.
 
 In fluid-based image registration method, each location typically
 discreted by image coordinate x has its own velocity at time point t,
@@ -59,7 +59,7 @@ get an *I*(1) that close to *I*<sub>1</sub>. The term "close" depends on
 the similarity metric. One the other hand, we would like to regularize
 the flow to be an continuous, both spatially and temporally, flow. So we
 can define the problem like this
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/c1474849b4d2de7109350c9968c65767.svg?invert_in_darkmode" align=middle width=349.12185pt height=40.70352pt/></p>
+<p align="center"><img alt="$$vv^* = \underset{v}{\text{argmin}}~ \frac 12 \int_0^1 \|v(x,t) \|^2_L \mathrm{d} t + Sim(I(1),I_1),$$" src="svgs/c1474849b4d2de7109350c9968c65767.png" align="middle" width="349.12185pt" height="40.70352pt"/></p>
 
 The *L* here refers the regularizer that encourages the property of the
 velocity field. So the first term is the regularization term while the
@@ -82,7 +82,7 @@ get the next time step image by computing
 
 Finally, For the typical fluid-based registration, we get the
 formulation like this
-<img src="https://rawgit.com/uncbiag/registration/introduction/svgs/67f97ab4aa6170db7d11b67b3787fe41.svg?invert_in_darkmode" align=middle width=333.418305pt height=33.18744000000001pt/>
+<img alt="$v^* = \underset{v}{\text{argmin}}~ \frac 12 \int_0^1 \|v(x,t) \|^2_L \mathrm{d} t + {Sim}(I(1),I_1),$" src="svgs/67f97ab4aa6170db7d11b67b3787fe41.png" align="middle" width="333.418305pt" height="33.18744000000001pt"/>
 
 Typical models
 ==============
@@ -109,7 +109,7 @@ We introduce momentum m, and velocity field can be smoothed from
 *\*(Optional) The key idea is to get a velocity field v, which can be
 define in Sobolev spaces, where
 *H*<sup>*s*</sup> ≡ {*v*:∥*v*∥<sub>*H*<sup>*s*</sup></sub>&lt;∞} with
-<img src="https://rawgit.com/uncbiag/registration/introduction/svgs/e04492eae00ddd80fa0c9cb277891955.svg?invert_in_darkmode" align=middle width=153.87289499999997pt height=361.46054999999996pt/>,
+<img alt="$\\langle u, h\\rangle\_{\\mathrm{H}^{s}}=\\sum\_{k=0}^{s}\\left\\langle\\mathrm{D}^{k} u, \\mathrm{D}^{k} h\\right\\rangle\_{\\mathrm{L}^{2}}$" src="svgs/e04492eae00ddd80fa0c9cb277891955.png" align="middle" width="153.87289499999997pt" height="361.46054999999996pt"/>,
 meaning sum of any order derivatives on *v* are bounded.
 ∥*v*∥<sub>*L*</sub><sup>2</sup> = ⟨*L*<sup>†</sup>*L**v*, *v*⟩, we
 introduce *m* = *L*<sup>†</sup>*L**v* or
@@ -149,7 +149,7 @@ We have *v*(*x*, *t*) = *v*(*x*, 0), and
 the Eq.
 <a href="#eq:general" data-reference-type="ref" data-reference="eq:general">[eq:general]</a>
 turns into
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/3d561b4cdba9df4a6c9399ea971efca8.svg?invert_in_darkmode" align=middle width=1114.20705pt height=19.526925pt/></p>
+<p align="center"><img alt="$$\\begin{split}&#10;&amp;m(x,0)^\* = \\underset{v}{\\text{argmin}}~ \\frac 12 \\langle m(x,0),v(x,0)\\rangle  + \\operatorname{Sim}(I(1),I\_1),\\\\ &amp;\\quad\\text{s.t.}\\quad\\partial\_t I + \\langle \\nabla I, v(x,0)\\rangle=0;\\quad I(0)=I\_0.&#10;\\end{split}$$" src="svgs/3d561b4cdba9df4a6c9399ea971efca8.png" align="middle" width="1114.20705pt" height="19.526925pt"/></p>
 
 The objective is to search optimal *m*(*x*, 0), which determines how the
 image flows.
@@ -174,7 +174,7 @@ is conserved,
 The Eq.
 <a href="#eq:general" data-reference-type="ref" data-reference="eq:general">[eq:general]</a>
 turns into
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/7dcf3b158d9725e7cd3ef1b5395048bf.svg?invert_in_darkmode" align=middle width=1112.61975pt height=19.526925pt/></p>
+<p align="center"><img alt="$$\\begin{split}&#10;&amp;m(x,0)^\* = \\underset{v}{\\text{argmin}}~ \\frac 12 \\langle m(x,0),v(x,0)\\rangle  + \\operatorname{Sim}(I(1),I\_1),\\\\ &amp;\\quad\\text{s.t.}\\quad\\partial\_t I + \\langle \\nabla I, v(x,t)\\rangle=0;\\quad I(0)=I\_0.&#10;\\end{split}$$" src="svgs/7dcf3b158d9725e7cd3ef1b5395048bf.png" align="middle" width="1112.61975pt" height="19.526925pt"/></p>
 The objective is to search optimal *m*(*x*, 0), which determines how
 mometum *m*(*x*, *t*) evolves, since the velocity is smoothed from *m*,
 it indirectly determines how the image flows.
@@ -218,7 +218,7 @@ specific formulation between *v* and *L* can conserve energy of term
 The Eq.
 <a href="#eq:general" data-reference-type="ref" data-reference="eq:general">[eq:general]</a>
 turns into
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/3bfac23bb44f6813fdc03f9b011a7843.svg?invert_in_darkmode" align=middle width=2197.7505pt height=16.438356pt/></p>
+<p align="center"><img alt="$$\\begin{split}&#10;&amp;m(0)^{\*},L(x,0)^{\*}=\\underset{m(0),L(x,0)}{\\operatorname{argmin}} \\frac{1}{2}\\langle m(x,0),v(x,0)\\rangle+\\operatorname{sim}\\left(I(1), I\_{1}\\right)+\\operatorname{Reg}\\left(L(x,0)\\right)\\\\&#10;\\quad\\text{s.t.}&amp;\\quad\\partial\_t I + \\langle \\nabla I, v)\\rangle=0, \\quad\\partial\_t L + \\langle \\nabla L,v\\rangle=0, \\quad I(0)=I\_0.&#10;\\end{split}$$" src="svgs/3bfac23bb44f6813fdc03f9b011a7843.png" align="middle" width="2197.7505pt" height="16.438356pt"/></p>
 The objective is to search optimal *m*(*x*, 0) and *L*(*x*, 0), which
 determines how mometum *m*(*x*, *t*) and the regularizer *L*(*x*, *t*)
 evolve, since the velocity is smoothed from *m* by *L*(*x*, *t*), it
