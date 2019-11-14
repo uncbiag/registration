@@ -11,9 +11,8 @@ see what we are going to talk about.
 -   Some typical models
 
 Hmmm, let’s start....
-$$
-\frac{n!}{k!(n-k)!} = {n \choose k}
-$$
+
+
 What is the fluid-based image registration
 ==========================================
 ![\sum_{i=0}^{N}\LaTeX_{i}](https://latex.codecogs.com/gif.latex?\sum_{i=0}^{N}\LaTeX_{i})
@@ -25,6 +24,10 @@ find a spatial transformation between image pairs, the source image (or
 moving image) and the target image (or fixed image).*
 
 Smile.gif
+
+$$
+\frac{n!}{k!(n-k)!} = {n \choose k}
+$$
 
 A desired transformation can be evaluated by “similarity” and
 “smoothness” that we often refer to “regularization”.
@@ -58,8 +61,7 @@ get an *I*(1) that close to *I*<sub>1</sub>. The term "close" depends on
 the similarity metric. One the other hand, we would like to regularize
 the flow to be an continuous, both spatially and temporally, flow. So we
 can define the problem like this
-$$v^\* = \\underset{v}{\\text{argmin}}~ \\frac 12 \\int\_0^1 \\|v(x,t) \\|^2\_L \\mathrm{d} t + \\operatorname{Sim}(I(1),I\_1),
-\\label{eq:lddmm}$$
+$$vv^* = \underset{v}{\text{argmin}}~ \frac 12 \int_0^1 \|v(x,t) \|^2_L \mathrm{d} t + Sim(I(1),I_1),$$
 
 The *L* here refers the regularizer that encourages the property of the
 velocity field. So the first term is the regularization term while the

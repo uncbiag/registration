@@ -11,9 +11,12 @@ see what we are going to talk about.
 -   Some typical models
 
 Hmmm, let’s start....
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.svg?invert_in_darkmode" align=middle width=127.984725pt height=39.45249pt/></p>
+
+
 What is the fluid-based image registration
 ==========================================
+![\sum_{i=0}^{N}\LaTeX_{i}](https://latex.codecogs.com/gif.latex?\sum_{i=0}^{N}\LaTeX_{i})
+![\sum_{i=0}^{N}\LaTeX_{i}](https://latex.codecogs.com/gif.latex?{v^* = \underset{v}{\text{argmin}}~ \frac 12 \int_0^1 \|v(x,t) \|^2_L \mathrm{d} t + \operatorname{Sim}(I(1),I_1)})
 Before we start to answer what is fluid-based image registration?
 
 Let’s first review what image registration is: *Image registration is to
@@ -21,6 +24,8 @@ find a spatial transformation between image pairs, the source image (or
 moving image) and the target image (or fixed image).*
 
 Smile.gif
+
+<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.svg?invert_in_darkmode" align=middle width=127.984725pt height=39.45249pt/></p>
 
 A desired transformation can be evaluated by “similarity” and
 “smoothness” that we often refer to “regularization”.
@@ -54,7 +59,7 @@ get an *I*(1) that close to *I*<sub>1</sub>. The term "close" depends on
 the similarity metric. One the other hand, we would like to regularize
 the flow to be an continuous, both spatially and temporally, flow. So we
 can define the problem like this
-<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/c5a6dce5c90ecf3d4726df28cc885532.svg?invert_in_darkmode" align=middle width=615.18765pt height=17.044829999999997pt/></p>
+<p align="center"><img src="https://rawgit.com/uncbiag/registration/introduction/svgs/c1474849b4d2de7109350c9968c65767.svg?invert_in_darkmode" align=middle width=349.12185pt height=40.70352pt/></p>
 
 The *L* here refers the regularizer that encourages the property of the
 velocity field. So the first term is the regularization term while the
